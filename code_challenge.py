@@ -111,3 +111,9 @@ for i in new_list:
     
 for i in new_list:
   print(i)
+
+
+# Saving to JSON
+out_file = open("myfile.json", "w")  
+json.dump(new_list, out_file, indent = 6)  
+out_file.close()  
